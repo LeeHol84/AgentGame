@@ -60,6 +60,8 @@ para1.innerHTML = `...Agent, the Eternal Empire requires your unique skills once
 
 para2.innerHTML = ""                 
 
+
+//This function takes a user input of 'name' in the html and then inputs it into the narrative.
 function codeName(){
     response = inputBox.value;
     inputBox.value = "";
@@ -67,6 +69,8 @@ function codeName(){
     para2.innerHTML = `Good ${agent.name} it is then, go do what you do best - track down, subdue and use a team of the most deadly entities in the galaxy to neutralise this threat to the empire!`
 
 }
+
+//This function calculates the player vs enemy battle outcome based on the relevant stats that it retrieves from the player and enemy objects, and then inserts the results into the narrative.
 
 function battle(){
     agent.speed = Math.floor((Math.random() * agent.speed) + 1);
