@@ -67,3 +67,26 @@ function codeName(){
     para2.innerHTML = `Good ${agent.name} it is then, go do what you do best - track down, subdue and use a team of the most deadly entities in the galaxy to neutralise this threat to the empire!`
 
 }
+
+function battle(){
+    agent.speed = Math.floor((Math.random() * agent.speed) + 1);
+    mon1.speed = Math.floor((Math.random() * mon1.speed) + 1);
+    if ((agent.attack*agent.speed) > (mon1.attack*mon1.speed)){
+        mon1.health == ((mon1.health-((mon1.attack*mon1.speed)-(agent.attack*agent.speed))));
+        console.log (`Good hit, the enemies health is down to${mon1.health} out of 100`)
+        
+        agent.speed = Math.floor((Math.random() * agent.speed) + 1);
+        mon1.speed = Math.floor((Math.random() * mon1.speed) + 1);
+
+    }
+    else if (((mon1.attack*mon1.speed))> (agent.attack*agent.speed)){
+        agent.health ==((agent.health-((agent.attack*agent.speed-mon1.attack*mon1.speed))));
+        console.log (`You got hit! You're health is down to ${agent.health} out of 100`)
+    }
+
+    else {
+        console.log ("It's a draw, one more time!");
+
+  
+    }
+}
