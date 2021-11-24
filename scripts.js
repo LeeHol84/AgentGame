@@ -6,9 +6,9 @@
 
 let button = document.getElementById("button");
 let inputBox = document.getElementById("inputText");
-let para = document.getElementById("Example");
-let para1 = document.getElementById("Example1");
-let para2 = document.getElementById("Example2");
+let para = document.getElementById("para");
+let para1 = document.getElementById("para1");
+let para2 = document.getElementById("para2");
 let response = "";
 
 const agent = {
